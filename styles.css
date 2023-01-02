@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+
+@media screen and (max) {
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-section {
+    color: rgb(32, 35, 41);
+    font-weight: 900px;
+    font-size: 5.625rem;
+    font-family:'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    flex-grow: 1;
+}
+
+.bottom-section {
+    background-color: rgb(32, 35, 41);
+    /* flex-grow: 3;  */
+    height: 100vh;
+}
