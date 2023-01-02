@@ -60,3 +60,17 @@
 .nav-list, li {
     padding-left: 2rem;
 }
+
+.inner-section {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.character-card {
+    width: 600px;
+    height: 220px;
+    background: rgb(60, 62, 68);
+    border-radius: 0.5rem;
+    margin: 0.75rem;
+}
