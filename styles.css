@@ -3,8 +3,20 @@
     padding: 0px; 
 }
 
-@media screen and (max) {
-    
+@media screen and (max-width:767px) {
+.top-section, h1  {
+        background-color: aqua;
+        font-size: 2.6rem;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .top-section, h1 {
+        background-color: red;
+        font-size: 4rem;
+        padding-left: 20px;
+    }
 }
 
 .container {
