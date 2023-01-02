@@ -73,4 +73,20 @@
     background: rgb(60, 62, 68);
     border-radius: 0.5rem;
     margin: 0.75rem;
+    display: flex;
+}
+
+.image-wrapper, img {
+    height: 100%;
+    
+}
+
+.content-wrapper {
+    display: flex;
+
+}
+.sub-section1, a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    
 }
