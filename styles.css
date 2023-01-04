@@ -16,17 +16,20 @@
         justify-content: center;
         background-color: red;
     }
-    .nav {
-        margin-right: 20px;
-
+    .nav-list {
+        margin-right: 20%;
+        font-size: 100%;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .top-section, h1 {
         /* background-color: red; */
         font-size: 4rem;
         padding-left: 20px;
+    }
+    .nav-list {
+        margin-left: 10%;
     }
 }
 
@@ -68,7 +71,8 @@
     list-style: none;
     flex-direction: row;
     color: rgb(158, 158, 158);
-    font-size: 112.5%;
+    margin-left: 20%;
+
 }
 .nav-list, li {
     padding-left: 2rem;
