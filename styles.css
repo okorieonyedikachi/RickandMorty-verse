@@ -87,13 +87,20 @@
     margin-left: 10%;
 }
 
-.character-card {
+.character-card-l {
     width: 100%;
     height: 220px;
     background: rgb(60, 62, 68);
     border-radius: 0.5rem;
     margin: 0.75rem;
     display: flex;
+}
+.character-card-s {
+    width: 294px;
+    height: 590px;
+    background-color: red;
+    border-radius: 0.5rem;
+    margin: 0.75rem;
 }
 
 .image-wrapper, img {
@@ -152,10 +159,3 @@ background: red;
     padding-top: 15px;
 }
 
-.portrait-card {
-    width: 294px;
-    height: 590px;
-    background-color: red;
-    border-radius: 0.5rem;
-    margin: 0.75rem;
-}
