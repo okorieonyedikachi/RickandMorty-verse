@@ -1,6 +1,5 @@
-const SIX_CHARS_API = "https://rickandmortyapi.com/api/character/1,2,3,4,298,501"
+const SIX_CHARS_API = "https://rickandmortyapi.com/api/character/298,501,360,100,1,12"
 let characters;
-
 const isStatus = (status) => {
     switch (status) {
         case "Alive":

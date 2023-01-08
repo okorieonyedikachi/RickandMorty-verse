@@ -37,14 +37,14 @@ body {
     .character-card-l {
         flex-direction: column;
         height: 500px !important;
-        width: 73% !important;
+        width: 100% !important;
 
     }
     
 }
 
 .character-card-l {
-    width: 50%;
+    width:700px;
     height: 220px;
     background: rgb(60, 62, 68);
     border-radius: 0.5rem;
@@ -113,6 +113,10 @@ body {
     align-items: center;
    padding-left: 50px;
    padding-right: 50px;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   /* width: 100%; */
+   flex-direction: row
 }
 
 .image-wrapper, img {
