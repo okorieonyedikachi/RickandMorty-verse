@@ -8,16 +8,13 @@ body {
 /* desktop - tablet */
 @media screen and (max-width: 1024px) {
     .top-section, h1 {
-        /* background-color: red; */
         font-size: 4rem;
         padding-left: 20px;
     }
     .nav-list {
         margin-left: 10%;
     }
-    .character-card-l {
-        /* height: 220px; */
-    }
+
 }
 
 
@@ -45,7 +42,6 @@ body {
     }
     
 }
-
 
 .character-card-l {
     width: 50%;
