@@ -1,5 +1,11 @@
 const SIX_CHARS_API = "https://rickandmortyapi.com/api/character/298,501,360,100,1,12"
 let characters;
+const thisYear = new Date().getFullYear()
+document.getElementById("author").innerHTML = `
+   ❮❯ by <a href="https://github.com/FoureyedVeen" target="_blank" class="footer-link">Cosmas Daniella</a> ${thisYear}
+`;
+
+
 const isStatus = (status) => {
     switch (status) {
         case "Alive":
