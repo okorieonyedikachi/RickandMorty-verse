@@ -64,9 +64,17 @@ body {
     padding-bottom: 100px;
 }
 
+.char-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 .character-card {
-    width:700px;
-    height: 220px;
+    width:500px;
+    height: 250px;
     background: rgb(60, 62, 68);
     border-radius: 0.5rem;
     margin: 0.75rem;
@@ -78,6 +86,7 @@ body {
     margin-bottom: 10px;
 
 }
+
 .content-wrapper {
     display: flex;
     flex: 3 1 0%;
@@ -85,12 +94,27 @@ body {
     margin-left: 15px;
     width: 100%;
     margin-top: 15px;
+    padding-left: 12px;
 }
 
 span {
-    color: gray;
+    color: grey;
+
 }
 
 h2 {
     color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+.sub-section {
+    padding-bottom: 8px;
 }
