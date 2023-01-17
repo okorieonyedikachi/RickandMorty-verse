@@ -38,10 +38,16 @@ body {
     .character-card-l {
         flex-direction: column;
         height: 500px !important;
-        width: 100% !important;
+        width: 90% !important;
 
     }
-    
+    img {
+        width: 100%;
+        
+    }
+    .image-wrapper {
+        /* height: 50%; */
+    }
 }
 
 .character-card-l {
@@ -106,6 +112,14 @@ body {
 }
 .nav-list, li {
     padding-left: 2rem;
+}
+
+.char-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .inner-section {
