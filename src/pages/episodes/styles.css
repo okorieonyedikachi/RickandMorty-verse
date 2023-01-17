@@ -78,3 +78,19 @@ body {
     margin-bottom: 10px;
 
 }
+.content-wrapper {
+    display: flex;
+    flex: 3 1 0%;
+    flex-direction: column; 
+    margin-left: 15px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+span {
+    color: gray;
+}
+
+h2 {
+    color: white;
+}
