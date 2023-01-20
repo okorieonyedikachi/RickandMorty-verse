@@ -73,7 +73,7 @@ body {
 }
 
 .character-card {
-    width:500px;
+    width:700px;
     height: 250px;
     background: rgb(60, 62, 68);
     border-radius: 0.5rem;
@@ -85,6 +85,22 @@ body {
     border-radius: 10px;
     margin-bottom: 10px;
 
+}
+
+.inner-section {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+   padding-left: 50px;
+   padding-right: 50px;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   /* width: 100%; */
+   flex-direction: row;
+}
+
+.image-wrapper, img {
+    height: 100%;
 }
 
 .content-wrapper {
