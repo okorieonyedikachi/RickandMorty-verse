@@ -30,8 +30,8 @@ const fetchFirstPage = () => {
                                 <h2>${ep?.episode}</h2>
                             </div>
                             <div class="sub-section">
-                                <span>Url:</span>
-                                <h2><a href="${ep?.url}">Link</a></h2>
+                                <span>Characters:</span>
+                                <h2><a href="${ep?.characters}">${ep?.characters.length}</a></h2>
                             </div>
                         </div>
                     </div>
