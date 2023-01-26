@@ -45,3 +45,10 @@ const fetchFirstPage = () => {
 }
 
 fetchFirstPage()
+
+// const myObject = { hello: 'world' };
+// // console.log(myObject);
+// const myObjectString = JSON.stringify(myObject);
+// // console.log(myObjectString);
+// localStorage.setItem('objectGreeting', myObjectString);
+// // console.log(localStorage);
