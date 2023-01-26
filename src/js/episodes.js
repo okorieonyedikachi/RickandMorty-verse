@@ -1,5 +1,7 @@
 const Ep_API = "https://rickandmortyapi.com/api/episode"
 
+
+
 // console.log(Ep_API); 
 
 const fetchFirstPage = () => {
@@ -31,7 +33,7 @@ const fetchFirstPage = () => {
                             </div>
                             <div class="sub-section">
                                 <span>Characters:</span>
-                                <h2><a href="${ep?.characters}">${ep?.characters.length}</a></h2>
+                                <h2 id="c-list"><a href="${ep?.characters}">${ep?.characters.length}</a></h2>
                             </div>
                         </div>
                     </div>
@@ -43,8 +45,13 @@ const fetchFirstPage = () => {
         })
         .catch (error => console.error(error))
 }
+function characterList() {
+    const epCharacter = "https://rickandmortyapi.com/api/character"
+    console.log(epCharacter);
+}
 
 fetchFirstPage()
+
 
 // const myObject = { hello: 'world' };
 // // console.log(myObject);
