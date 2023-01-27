@@ -9,7 +9,7 @@ const fetchFirstPage = () => {
         .get(Ep_API)
         .then(response => {
             episodes = response?.data.results
-            console.log(episodes);
+            // console.log(episodes);
             let output = "";
             for (let ep of episodes) {
                 output += `
@@ -33,7 +33,7 @@ const fetchFirstPage = () => {
                             </div>
                             <div class="sub-section">
                                 <span>Characters:</span>
-                                <h2 id="c-list"><a href="${ep?.characters}">${ep?.characters.length}</a></h2>
+                                <h2 id="c-list"><a href="${ep?.characters}">${ep?.characters?.length}</a></h2>
                             </div>
                         </div>
                     </div>
@@ -45,13 +45,23 @@ const fetchFirstPage = () => {
         })
         .catch (error => console.error(error))
 }
-function characterList() {
-    const epCharacter = "https://rickandmortyapi.com/api/character"
-    console.log(epCharacter);
-}
 
 fetchFirstPage()
 
+// const navNewTab = (character) => {
+//     // const characterListString = JSON.stringify(character);
+//     // localStorage.setItem('characters', characterListString);
+//     // onclick = 'window.location.href = "${ep?.characters}"' 
+//     // console.log(character);navNewTab
+
+// }
+
+// const characterList = {ep?.characters};
+    // console.log(characterList);
+
+    // console.log(localStorage);
+
+    
 
 // const myObject = { hello: 'world' };
 // // console.log(myObject);
