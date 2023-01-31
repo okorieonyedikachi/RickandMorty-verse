@@ -48,18 +48,18 @@ const fetchFirstPage = () => {
 
 fetchFirstPage()
 
-// const navNewTab = (character) => {
-//     // const characterListString = JSON.stringify(character);
-//     // localStorage.setItem('characters', characterListString);
-//     // onclick = 'window.location.href = "${ep?.characters}"' 
-//     // console.log(character);navNewTab
+const navNewTab = (character) => {
+    const characterListString = JSON.stringify(character);
+    localStorage.setItem('characters', characterListString);
+    onclick = 'window.location.href = "${ep?.characters}"' 
+    console.log(character);
 
-// }
+}
 
 // const characterList = {ep?.characters};
-    // console.log(characterList);
+//     console.log(characterList);
 
-    // console.log(localStorage);
+//     console.log(localStorage);
 
     
 
@@ -69,3 +69,4 @@ fetchFirstPage()
 // // console.log(myObjectString);
 // localStorage.setItem('objectGreeting', myObjectString);
 // // console.log(localStorage);
+
