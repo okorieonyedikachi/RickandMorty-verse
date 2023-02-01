@@ -16,7 +16,7 @@ const fetchFirstPage = () => {
                 <div class="character-card">
                     <div class="inner-section">
                         <div class="image-wrapper">
-                            <img src="./Rick--Morty-Season-6EWKSF-feature.avif"/>
+                            <img src="../../images/Rick--Morty-Season-6EWKSF-feature.avif"/>
                         </div>
                         <div class="content-wrapper">
                             <div class="sub-section">
