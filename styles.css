@@ -69,7 +69,7 @@ body {
 .top-section {
     color: rgb(32, 35, 41);
     font-weight: 900px;
-    font-size: 5.625rem;
+    font-size: 5rem;
     font-family:'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
     display: flex;
     justify-content: center;
