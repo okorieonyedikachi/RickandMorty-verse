@@ -116,7 +116,7 @@ img {
     white-space: nowrap;
     text-overflow: clip;  
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .sub3 {
