@@ -32,12 +32,14 @@ body {
     }
     .inner-section {
        display: flex; 
-       flex-direction: column;
+       /* flex-direction: column; */
+       background-color: red;
     }
-    .character-card-l {
-        flex-direction: column;
+    .character-card {
+        
+       
         height: 500px !important;
-        width: 100% !important;
+        width: 80% !important;
 
     }
     
@@ -80,6 +82,10 @@ body {
     margin: 0.75rem;
     border-radius: 10px;
     margin-bottom: 10px;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip; 
 }
 
 .inner-section {
@@ -113,6 +119,8 @@ img {
     white-space: nowrap;
     text-overflow: clip;  
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 
 span {

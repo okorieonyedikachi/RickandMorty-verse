@@ -40,7 +40,7 @@ body {
         width: 100% !important;
 
     }
-    
+
 
 .top-section {
     color: rgb(32, 35, 41);
@@ -78,6 +78,10 @@ body {
     margin: 0.75rem;
     border-radius: 10px;
     margin-bottom: 10px;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip; 
 
 }
 
@@ -85,7 +89,7 @@ body {
    width: 100%;
    height: 100%;
    display: flex;
-   flex-direction: row;
+   flex-direction: row;   
 }
 
 .image-wrapper {
@@ -112,6 +116,12 @@ img {
     white-space: nowrap;
     text-overflow: clip;  
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sub3 {
+    overflow: hidden;
+    text-overflow: clip;
 }
 
 span {
