@@ -19,22 +19,24 @@ const fetchFirstPage = () => {
                             <img src="../../images/Rick--Morty-Season-6EWKSF-feature.avif"/>
                         </div>
                         <div class="content-wrapper">
-                            <div class="sub-section">
-                                <span>Name:</span>
-                                <h2>${ep?.name}</h2>
-                            </div>
-                            <div class="sub-section">
-                                <span>Airdate:</span>
-                                <h2>${ep?.air_date}</h2>
-                            </div>
-                            <div class="sub-section">
-                                <span>Episode:</span>
-                                <h2>${ep?.episode}</h2>
-                            </div>
-                            <div class="sub-section">
-                                <span>Characters:</span>
-                                <h2 id="c-list"><a href="${ep?.characters}">${ep?.characters?.length}</a></h2>
-                            </div>
+                            <div class="sub-wrapper">
+                                <div class="sub-section">
+                                    <span>Name:</span>
+                                    <h2>${ep?.name}</h2>
+                                </div>
+                                <div class="sub-section">
+                                    <span>Airdate:</span>
+                                    <h2>${ep?.air_date}</h2>
+                                </div>
+                                <div class="sub-section">
+                                    <span>Episode:</span>
+                                    <h2>${ep?.episode}</h2>
+                                </div>
+                                <div class="sub-section">
+                                    <span>Characters:</span>
+                                    <h2 id="c-list"><a href="${ep?.characters}">${ep?.characters?.length}</a></h2>
+                                </div>
+                        </div>    
                         </div>
                     </div>
                 </div>

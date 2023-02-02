@@ -73,15 +73,15 @@ body {
 }
 
 .character-card {
-    width:500px;
+    width:700px;
     height: 250px;
     background: rgb(60, 62, 68);
     border-radius: 0.5rem;
     margin: 0.75rem;
-    display: flex;
+    /* display: flex;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: clip; 
+    text-overflow: clip;  */
     border-radius: 10px;
     margin-bottom: 10px;
 
@@ -89,18 +89,19 @@ body {
 
 .inner-section {
     display: flex; 
+    width: 100%;
     /* justify-content: center;
     align-items: center; */
    /* padding-left: 50px; */
    padding-right: 50px;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
+   /* -webkit-flex-wrap: wrap;
+   flex-wrap: wrap; */
    /* width: 100%; */
    flex-direction: row;
 }
 
 .image-wrapper {
-    height: 100%;
+    height: 250px;
     /* background-color: blue; */
     width: 50%;
     
@@ -108,9 +109,9 @@ body {
 img {
     height: 100%;
     width: 100%;
-    padding-left: 0px;
-}
-.content-wrapper {
+    border-radius:10px 0px 0px 10px;
+} 
+/* .content-wrapper {
     display: flex;
     flex: 3 1 0%;
     flex-direction: column; 
@@ -119,7 +120,23 @@ img {
     margin-top: 15px;
     padding-left: 12px;
     /* background-color: red; */
+/* }  */
+
+.content-wrapper {
+    width: 50%;
+    height: 100%;
+    padding-left: 12px;
+    margin-top: 10px;
 }
+
+.sub-wrapper {
+    font-size: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;  
+    font-weight: bold;
+}
+
 
 span {
     color: grey;
