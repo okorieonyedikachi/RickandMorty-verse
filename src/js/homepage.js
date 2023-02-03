@@ -30,7 +30,7 @@ const fetchSixCharacters = () => {
              let output = "";
              for (let char of characters) {
                 output += `
-                <div class="character-card-l">
+                <div class="character-card">
                     <div class="image-wrapper">
                         <img src="${char?.image}" alt="${char?.name}">
                     </div>
