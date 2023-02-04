@@ -32,11 +32,10 @@ body {
     }
 
     .character-card {
-        width: 300px;
+        width: 100% !important;
         height: 500px !important;
-        display: flex;
-        flex-direction: column;
-
+        /* display: flex; */
+        flex-direction: column; 
     }
 
     .image-wrapper {
@@ -59,9 +58,9 @@ body {
         text-overflow: ellipsis; 
     }
 
-    .content-wrapper {
+    /* .content-wrapper {
         /* background-color: blue; */
-    }
+    /* } */
     
     /* .character-card-l {
         display: flex;
