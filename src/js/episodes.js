@@ -44,19 +44,28 @@ const fetchFirstPage = () => {
             }
         document.getElementById("charContainer").innerHTML = output;    
         
+
+        // const arrList = Ep_API?.results?.characters;
+        // console.log(arrList);
+        // const myObj = Object.assign({}, arrList);
+
+        // console.log(myObj);   
         })
         .catch (error => console.error(error))
+
+        
 }
 
 fetchFirstPage()
 
-const navNewTab = (character) => {
-    const characterListString = JSON.stringify(character);
-    localStorage.setItem('characters', characterListString);
-    onclick = 'window.location.href = "${ep?.characters}"' 
-    console.log(character);
 
-}
+// const navNewTab = (character) => {
+//     const characterListString = JSON.stringify(character);
+//     localStorage.setItem('characters', characterListString);
+//     onclick = 'window.location.href = "${ep?.characters}"' 
+//     console.log(character);
+
+// }
 
 // const characterList = {ep?.characters};
 //     console.log(characterList);
@@ -71,4 +80,3 @@ const navNewTab = (character) => {
 // // console.log(myObjectString);
 // localStorage.setItem('objectGreeting', myObjectString);
 // // console.log(localStorage);
-
