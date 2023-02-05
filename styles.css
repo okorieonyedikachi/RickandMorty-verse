@@ -34,7 +34,6 @@ body {
     .character-card {
         width: 100% !important;
         height: 500px !important;
-        /* display: flex; */
         flex-direction: column; 
     }
 
