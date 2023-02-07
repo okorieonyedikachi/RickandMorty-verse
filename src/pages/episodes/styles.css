@@ -90,10 +90,10 @@ body {
     flex-direction: column;
 }
 
-.image-wrapper {
+/* .image-wrapper {
     height: 250px;
     width: 35%;  
-}
+} */
 
 img {
     height: 100%;
