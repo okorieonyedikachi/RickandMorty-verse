@@ -45,11 +45,7 @@ const fetchFirstPage = () => {
         document.getElementById("charContainer").innerHTML = output;    
         
 
-        // const arrList = Ep_API?.results?.characters;
-        // console.log(arrList);
-        // const myObj = Object.assign({}, arrList);
-
-        // console.log(myObj);   
+    
         })
         .catch (error => console.error(error))
 
