@@ -12,32 +12,32 @@ const fetchPage = () => {
             for (let location of locations) {
                 output += `
                 <div class="character-card">
-                <div class="inner-section">
-                    <div class="image-wrapper">
-                        <img src="../../images/Rick--Morty-Season-6EWKSF-feature.avif"/>
-                    </div>
-                    <div class="content-wrapper">
-                        <div class="sub-wrapper">
-                            <div class="sub-section">
-                                <span>Name:</span>
-                                <h2><a href="#">${location?.name}</h2></a>
-                            </div>
-                            <div class="sub-section">
-                                <span>Type:</span>
-                                <h2><a href="#" rel="noopener">${location?.type}</h2></a>
-                            </div>
-                            <div class="sub-section ">
-                                <span>Dimension:</span>
-                                <h2>${location?.dimension}</h2>
-                            </div>
-                            <div class="sub-section sub3">
-                                <span>Residents:</span>
-                                <h2 id="c-list"><a href="#">${location?.residents?.length}</a></h2>
+                    <div class="inner-section">
+                        <div class="image-wrapper">
+                            <img src="../../images/Rick--Morty-Season-6EWKSF-feature.avif"/>
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="sub-wrapper">
+                                <div class="sub-section">
+                                    <span>Name:</span>
+                                    <h2><a href="#">${location?.name}</h2></a>
+                                </div>
+                                <div class="sub-section">
+                                    <span>Type:</span>
+                                    <h2><a href="#" rel="noopener">${location?.type}</h2></a>
+                                </div>
+                                <div class="sub-section ">
+                                    <span>Dimension:</span>
+                                    <h2>${location?.dimension}</h2>
+                                </div>
+                                <div class="sub-section sub3">
+                                    <span>Residents:</span>
+                                    <h2 id="c-list"><a href="#">${location?.residents?.length}</a></h2>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div> 
+                </div> 
                 `
             }
 
