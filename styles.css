@@ -57,29 +57,6 @@ body {
         text-overflow: ellipsis; 
     }
 
-    /* .content-wrapper {
-        /* background-color: blue; */
-    /* } */
-    
-    /* .character-card-l {
-        display: flex;
-        flex-direction: column;
-        height: 500px !important;
-        width: 250px;
-
-    }
-    .content-wrapper {
-        background-color: red;
-    }
-    .image-wrapper {
-        height: 50%;
-        width: 100%;
-        background-color: blue;
-    }
-    .img {
-        width: 250px !important;
-        height: 50%;
-    } */
     
 }
 
@@ -164,7 +141,7 @@ body {
 }
 
 .image-wrapper {
-    width: 35%;
+  
 }
 
 img {
