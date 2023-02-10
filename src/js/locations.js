@@ -1,51 +1,49 @@
 const Loc_API = "https://rickandmortyapi.com/api/location"
 
+// console.log(CHARS_API);
+let character;
 
-// console.log(Loc_API);
-const fetchPage = () => {
+
+const fetchFirstPage = () => {
     axios
         .get(Loc_API)
         .then(response => {
-            locations = response?.data?.results
-            // console.log(locations);
+            locations = response?.data.results
+            console.log(locations);
             let output = "";
             for (let location of locations) {
                 output += `
                 <div class="character-card">
-                    <div class="inner-section">
-                        <div class="image-wrapper">
-                            <img src="../../images/Rick--Morty-Season-6EWKSF-feature.avif"/>
+                    <div class="image-wrapper">
+                        <img src="../../images/Rick--Morty-Season-6EWKSF-feature.avif" alt="${location?.name}">
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="sub-section1">
+                            <a href="https://rickandmortyapi.com/api/character/${location?.id}" rel="noopener noreferrer" target="_blank">
+                                <h2 class="name">${location?.name}</h2>
+                            </a>
                         </div>
-                        <div class="content-wrapper">
-                            <div class="sub-wrapper">
-                                <div class="sub-section">
-                                    <span>Name:</span>
-                                    <h2><a href="#">${location?.name}</h2></a>
-                                </div>
-                                <div class="sub-section">
-                                    <span>Type:</span>
-                                    <h2><a href="#" rel="noopener">${location?.type}</h2></a>
-                                </div>
-                                <div class="sub-section ">
-                                    <span>Dimension:</span>
-                                    <h2>${location?.dimension}</h2>
-                                </div>
-                                <div class="sub-section sub3">
-                                    <span>Residents:</span>
-                                    <h2 id="c-list"><a href="#">${location?.residents?.length}</a></h2>
-                                </div>
-                            </div>
+                        <div class="sub-section2">
+                            <span class="text-gray text-padding">Type:</span>
+                            <a href="#" rel="noopener noreferrer" target="_blank">${location?.type}</a>
+                        </div>
+                        <div class="sub-section3">
+                            <span class="text-gray text-padding">Dimension:</span>
+                            <a href="#" target="_blank">${location?.dimension}</a>
+                        </div>
+                        <div class="sub-section3">
+                            <span class="text-gray text-padding">Residents:</span>
+                            <a href="#" target="_blank">${location?.residents?.length}</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 `
             }
 
-        document.getElementById("charContainer").innerHTML = output;     
-        
+        document.getElementById("charContainer").innerHTML = output; 
+
         })
         .catch (error => console.error(error))
-
 }
 
-fetchPage()
+fetchFirstPage()
