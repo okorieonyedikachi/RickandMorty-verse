@@ -1,13 +1,18 @@
-const Loc_API = "https://rickandmortyapi.com/api/location"
+var currentPage = 1;
 
-// console.log(CHARS_API);
-// let character;
+
+
+const prevButton = document.getElementById("prev");
+
+const nextButton = document.getElementById("next");
 
 
 const fetchFirstPage = () => {
+    const Loc_API = `https://rickandmortyapi.com/api/location?page=${currentPage}`
     axios
         .get(Loc_API)
         .then(response => {
+            lastPage = response.data.info.pages;
             locations = response?.data.results
             console.log(locations);
             let output = "";
@@ -48,3 +53,19 @@ const fetchFirstPage = () => {
 }
 
 fetchFirstPage()
+
+prevButton.addEventListener("click",() => {
+    if(currentPage == 1){
+        return;
+    }
+    currentPage--;
+    fetchFirstPage()
+})
+
+nextButton.addEventListener("click",() => {
+    if(currentPage == lastPage) {
+        return;
+    }
+    currentPage++;
+    fetchFirstPage()
+})
