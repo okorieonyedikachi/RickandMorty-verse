@@ -1,6 +1,10 @@
-const CHARS_API = "https://rickandmortyapi.com/api/character?page=1"
-// console.log(CHARS_API);
+var currentPage = 1;
+
 let character;
+
+const prevButton = document.getElementById("prev");
+
+const nextButton = document.getElementById("next");
 
 const isStatus = (status) => {
     switch (status) {
@@ -18,10 +22,12 @@ const isStatus = (status) => {
     }
 }
 const fetchFirstPage = () => {
+    const CHARS_API = `https://rickandmortyapi.com/api/character?page=${currentPage}`;
     axios
         .get(CHARS_API)
         .then(response => {
-            characters = response?.data.results
+            lastPage = response.data.info.pages;
+            characters = response?.data?.results
             console.log(characters);
             let output = "";
             for (let char of characters) {
@@ -62,3 +68,19 @@ const fetchFirstPage = () => {
 }
 
 fetchFirstPage()
+
+prevButton.addEventListener("click",() => {
+    if(currentPage == 1){
+        return;
+    }
+    currentPage--;
+    fetchFirstPage()
+})
+
+nextButton.addEventListener("click",() => {
+    if(currentPage == lastPage) {
+        return;
+    }
+    currentPage++;
+    fetchFirstPage()
+})
