@@ -204,3 +204,24 @@ a:hover {
     text-decoration: underline;
     text-decoration-color: orange;
 }
+
+.page {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+p {
+    color: white;
+    font-size: 23px;
+}
+
+#prev {
+    margin-right: 20px;
+}
+
+#next {
+    margin-left: 20px;
+}

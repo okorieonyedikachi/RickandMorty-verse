@@ -1,15 +1,17 @@
-const Ep_API = "https://rickandmortyapi.com/api/episode"
+var currentPage = 1;
 
+const prevButton = document.getElementById("prev");
 
+const nextButton = document.getElementById("next");
 
-// console.log(Ep_API); 
 
 const fetchFirstPage = () => {
+    const Ep_API = `https://rickandmortyapi.com/api/episode?page=${currentPage}`;
     axios
         .get(Ep_API)
         .then(response => {
+            lastPage = response.data.info.pages;
             episodes = response?.data.results
-            // console.log(episodes);
             let output = "";
             for (let ep of episodes) {
                 output += `
@@ -51,6 +53,22 @@ const fetchFirstPage = () => {
 }
 
 fetchFirstPage()
+
+prevButton.addEventListener("click",() => {
+    if(currentPage == 1){
+        return;
+    }
+    currentPage--;
+    fetchFirstPage()
+})
+
+nextButton.addEventListener("click",() => {
+    if(currentPage == lastPage) {
+        return;
+    }
+    currentPage++;
+    fetchFirstPage()
+})
 
 
 // const navNewTab = (character) => {
