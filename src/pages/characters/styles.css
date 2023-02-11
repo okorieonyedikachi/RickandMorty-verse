@@ -112,7 +112,7 @@ body {
    padding-right: 50px;
    -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
-   width: 100%;
+   /* width: 100%; */
    flex-direction: row;
 }
 
@@ -193,4 +193,25 @@ a:hover {
     width: 70%;
     margin-right: 15px;
     padding: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+p {
+    color: white;
+    font-size: 23px;
+}
+
+#prev {
+    margin-right: 20px;
+}
+
+#next {
+    margin-left: 20px;
 }
