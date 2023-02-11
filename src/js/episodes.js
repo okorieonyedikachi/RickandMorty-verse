@@ -14,33 +14,31 @@ const fetchFirstPage = () => {
             for (let ep of episodes) {
                 output += `
                 <div class="character-card">
-                    <div class="inner-section">
-                        <div class="image-wrapper">
-                            <img src="../../images/Rick--Morty-Season-6EWKSF-feature.avif"/>
+                    <div class="image-wrapper">
+                        <img src="../../images/Rick--Morty-Season-6EWKSF-feature.avif" alt="${location?.name}">
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="sub-section1">
+                            <span class="text-gray text-padding">Name:</span>
+                            <a href="https://rickandmortyapi.com/api/character/${ep?.id}" rel="noopener noreferrer" target="_blank">
+                                <h2 class="name">${ep?.name}</h2>
+                            </a>
                         </div>
-                        <div class="content-wrapper">
-                            <div class="sub-wrapper">
-                                <div class="sub-section">
-                                    <span>Name:</span>
-                                    <h2>${ep?.name}</h2>
-                                </div>
-                                <div class="sub-section">
-                                    <span>Airdate:</span>
-                                    <h2>${ep?.air_date}</h2>
-                                </div>
-                                <div class="sub-section">
-                                    <span>Episode:</span>
-                                    <h2>${ep?.episode}</h2>
-                                </div>
-                                <div class="sub-section">
-                                    <span>Characters:</span>
-                                    <h2 id="c-list"><a href="${ep?.characters}">${ep?.characters?.length}</a></h2>
-                                </div>
-                        </div>    
+                        <div class="sub-section2">
+                            <span class="text-gray text-padding">Airdate:</span>
+                            <a href="#" rel="noopener noreferrer" target="_blank">${ep?.air_date}</a>
+                        </div>
+                        <div class="sub-section3">
+                            <span class="text-gray text-padding">Episodes:</span>
+                            <a href="#" target="_blank">${ep?.episode}</a>
+                        </div>
+                        <div class="sub-section3 last">
+                            <span class="text-gray text-padding">Characters:</span>
+                            <a href="#" target="_blank">${ep?.characters?.length}</a>
                         </div>
                     </div>
                 </div>
-            `
+                `
             }
         document.getElementById("charContainer").innerHTML = output;    
         

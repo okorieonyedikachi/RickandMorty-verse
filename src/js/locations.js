@@ -1,7 +1,7 @@
 const Loc_API = "https://rickandmortyapi.com/api/location"
 
 // console.log(CHARS_API);
-let character;
+// let character;
 
 
 const fetchFirstPage = () => {
@@ -19,6 +19,7 @@ const fetchFirstPage = () => {
                     </div>
                     <div class="content-wrapper">
                         <div class="sub-section1">
+                            <span class="text-gray text-padding">Name:</span>
                             <a href="https://rickandmortyapi.com/api/character/${location?.id}" rel="noopener noreferrer" target="_blank">
                                 <h2 class="name">${location?.name}</h2>
                             </a>
@@ -31,7 +32,7 @@ const fetchFirstPage = () => {
                             <span class="text-gray text-padding">Dimension:</span>
                             <a href="#" target="_blank">${location?.dimension}</a>
                         </div>
-                        <div class="sub-section3">
+                        <div class="sub-section3 last">
                             <span class="text-gray text-padding">Residents:</span>
                             <a href="#" target="_blank">${location?.residents?.length}</a>
                         </div>
