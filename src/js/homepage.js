@@ -1,15 +1,10 @@
-var currentPage = 1;
-var lastPage = 99;
-let characters;
+const SIX_CHARS_API = "https://rickandmortyapi.com/api/character/298,501,360,100,1,12"
 
 const thisYear = new Date().getFullYear()
 document.getElementById("author").innerHTML = `
    ❮❯ by <a href="https://github.com/FoureyedVeen" target="_blank" class="footer-link">Cosmas Daniella</a> ${thisYear}
 `;
 
-const prevButton = document.getElementById("prev");
-
-const nextButton = document.getElementById("next");
 
 const isStatus = (status) => {
     switch (status) {
@@ -27,12 +22,10 @@ const isStatus = (status) => {
     }
 }
 const fetchSixCharacters = () => {
-    const SIX_CHARS_API = `https://rickandmortyapi.com/api/character?page=${currentPage}`
     axios
         .get(SIX_CHARS_API)
         .then(res => {
-            lastPage = res.data.info.pages;
-             characters = res?.data?.results;
+             characters = res?.data
              let output = "";
              for (let char of characters) {
                 output += `
@@ -72,21 +65,4 @@ const fetchSixCharacters = () => {
 
 
 fetchSixCharacters()
-
-prevButton.addEventListener("click",() => {
-    // window.alert("clicked")
-    if (currentPage == 1) {
-        return;
-    } 
-    currentPage--;
-    fetchSixCharacters()
-})
-
-nextButton.addEventListener("click",() => {
-    if (currentPage == lastPage) {
-        return;
-    }
-    currentPage++;
-    fetchSixCharacters()
-})
 
