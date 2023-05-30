@@ -20,4 +20,8 @@ Contributions to this project are welcome, to contribute, please follow these st
 
 # Contact 
 Feel free to reach out if you have any questions, suggestions, or would like to collaborate on this project
+Email : cosmasdaniella@gmail.com 
+LinkedIn : https://www.linkedin.com/in/daniella-cosmas-735580144/
+Instagram : https://www.instagram.com/_rav33n/  
+
 https://foureyedveen.github.io/RickandMorty-verse/
